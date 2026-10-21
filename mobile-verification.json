@@ -7,8 +7,8 @@
         "id": "surface",
         "overflow": false,
         "heading": {
-          "left": 22,
-          "right": 338,
+          "left": 24,
+          "right": 340,
           "width": 316
         },
         "visible": "1"
@@ -17,19 +17,19 @@
         "id": "life",
         "overflow": false,
         "heading": {
-          "left": 21.999984741210938,
-          "right": 337.99998474121094,
-          "width": 316
+          "left": 23.99997329711914,
+          "right": 336.0000343322754,
+          "width": 312.00006103515625
         },
-        "visible": "0.999998"
+        "visible": "0.999997"
       },
       {
         "id": "abyss",
         "overflow": false,
         "heading": {
-          "left": 22,
-          "right": 338,
-          "width": 316
+          "left": 24.0000057220459,
+          "right": 336.0000057220459,
+          "width": 312
         },
         "visible": "1"
       },
@@ -37,9 +37,9 @@
         "id": "join",
         "overflow": false,
         "heading": {
-          "left": 22,
-          "right": 338,
-          "width": 316
+          "left": 24,
+          "right": 336,
+          "width": 312
         },
         "visible": "1"
       }
@@ -57,8 +57,8 @@
         "id": "surface",
         "overflow": false,
         "heading": {
-          "left": 22,
-          "right": 368,
+          "left": 24,
+          "right": 370,
           "width": 346
         },
         "visible": "1"
@@ -67,29 +67,29 @@
         "id": "life",
         "overflow": false,
         "heading": {
-          "left": 21.99998664855957,
-          "right": 367.99998664855957,
-          "width": 346
+          "left": 23.999998092651367,
+          "right": 365.99999809265137,
+          "width": 342
         },
-        "visible": "0.999998"
+        "visible": "1"
       },
       {
         "id": "abyss",
         "overflow": false,
         "heading": {
-          "left": 22.00008773803711,
-          "right": 368.0000877380371,
-          "width": 346
+          "left": 24.000022888183594,
+          "right": 366.0000228881836,
+          "width": 342
         },
-        "visible": "0.999999"
+        "visible": "1"
       },
       {
         "id": "join",
         "overflow": false,
         "heading": {
-          "left": 22,
-          "right": 365,
-          "width": 343
+          "left": 24,
+          "right": 366,
+          "width": 342
         },
         "visible": "1"
       }
@@ -107,8 +107,8 @@
         "id": "surface",
         "overflow": false,
         "heading": {
-          "left": 22,
-          "right": 408,
+          "left": 24,
+          "right": 410,
           "width": 386
         },
         "visible": "1"
@@ -117,29 +117,29 @@
         "id": "life",
         "overflow": false,
         "heading": {
-          "left": 21.999980926513672,
-          "right": 408.0000419616699,
-          "width": 386.00006103515625
+          "left": 23.99999237060547,
+          "right": 405.99999237060547,
+          "width": 382
         },
-        "visible": "0.999998"
+        "visible": "0.999999"
       },
       {
         "id": "abyss",
         "overflow": false,
         "heading": {
-          "left": 22.000194549560547,
-          "right": 408.00019454956055,
-          "width": 386
+          "left": 24.000032424926758,
+          "right": 406.00003242492676,
+          "width": 382
         },
-        "visible": "0.999997"
+        "visible": "1"
       },
       {
         "id": "join",
         "overflow": false,
         "heading": {
-          "left": 22,
-          "right": 400.1875,
-          "width": 378.1875
+          "left": 24,
+          "right": 406,
+          "width": 382
         },
         "visible": "1"
       }
@@ -157,8 +157,8 @@
         "id": "surface",
         "overflow": false,
         "heading": {
-          "left": 22,
-          "right": 338,
+          "left": 24,
+          "right": 340,
           "width": 316
         },
         "visible": "1"
@@ -167,9 +167,9 @@
         "id": "life",
         "overflow": false,
         "heading": {
-          "left": 22,
-          "right": 338,
-          "width": 316
+          "left": 24,
+          "right": 336,
+          "width": 312
         },
         "visible": "1"
       },
@@ -177,9 +177,9 @@
         "id": "abyss",
         "overflow": false,
         "heading": {
-          "left": 22,
-          "right": 338,
-          "width": 316
+          "left": 24.00001335144043,
+          "right": 336.00001335144043,
+          "width": 312
         },
         "visible": "1"
       },
@@ -187,9 +187,9 @@
         "id": "join",
         "overflow": false,
         "heading": {
-          "left": 22,
-          "right": 338,
-          "width": 316
+          "left": 24,
+          "right": 336,
+          "width": 312
         },
         "visible": "1"
       }
@@ -207,8 +207,8 @@
         "id": "surface",
         "overflow": false,
         "heading": {
-          "left": 22,
-          "right": 368,
+          "left": 24,
+          "right": 370,
           "width": 346
         },
         "visible": "1"
@@ -217,9 +217,9 @@
         "id": "life",
         "overflow": false,
         "heading": {
-          "left": 22,
-          "right": 368,
-          "width": 346
+          "left": 23.999998092651367,
+          "right": 365.99999809265137,
+          "width": 342
         },
         "visible": "1"
       },
@@ -227,9 +227,9 @@
         "id": "abyss",
         "overflow": false,
         "heading": {
-          "left": 22,
-          "right": 368,
-          "width": 346
+          "left": 24.000032424926758,
+          "right": 366.00003242492676,
+          "width": 342
         },
         "visible": "1"
       },
@@ -237,9 +237,9 @@
         "id": "join",
         "overflow": false,
         "heading": {
-          "left": 22,
-          "right": 364.953125,
-          "width": 342.953125
+          "left": 24,
+          "right": 366,
+          "width": 342
         },
         "visible": "1"
       }
@@ -257,8 +257,8 @@
         "id": "surface",
         "overflow": false,
         "heading": {
-          "left": 22,
-          "right": 408,
+          "left": 24,
+          "right": 410,
           "width": 386
         },
         "visible": "1"
@@ -267,19 +267,19 @@
         "id": "life",
         "overflow": false,
         "heading": {
-          "left": 22,
-          "right": 408,
-          "width": 386
+          "left": 23.99999237060547,
+          "right": 405.99999237060547,
+          "width": 382
         },
-        "visible": "1"
+        "visible": "0.999999"
       },
       {
         "id": "abyss",
         "overflow": false,
         "heading": {
-          "left": 22,
-          "right": 408,
-          "width": 386
+          "left": 24.00003433227539,
+          "right": 406.0000343322754,
+          "width": 382
         },
         "visible": "1"
       },
@@ -287,9 +287,9 @@
         "id": "join",
         "overflow": false,
         "heading": {
-          "left": 22,
-          "right": 400.1875,
-          "width": 378.1875
+          "left": 24,
+          "right": 406,
+          "width": 382
         },
         "visible": "1"
       }
