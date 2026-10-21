@@ -1,0 +1,302 @@
+[
+  {
+    "engine": "webkit",
+    "width": 360,
+    "states": [
+      {
+        "id": "surface",
+        "overflow": false,
+        "heading": {
+          "left": 22,
+          "right": 336,
+          "width": 314
+        },
+        "visible": "1"
+      },
+      {
+        "id": "life",
+        "overflow": false,
+        "heading": {
+          "left": 21.999980926513672,
+          "right": 297.7500419616699,
+          "width": 275.75006103515625
+        },
+        "visible": "0.999999"
+      },
+      {
+        "id": "abyss",
+        "overflow": false,
+        "heading": {
+          "left": 22.000001907348633,
+          "right": 337.56250190734863,
+          "width": 315.5625
+        },
+        "visible": "1"
+      },
+      {
+        "id": "join",
+        "overflow": false,
+        "heading": {
+          "left": 22,
+          "right": 338,
+          "width": 316
+        },
+        "visible": "1"
+      }
+    ],
+    "menuOpen": true,
+    "menuClosed": true,
+    "glyphs": [],
+    "errors": []
+  },
+  {
+    "engine": "webkit",
+    "width": 390,
+    "states": [
+      {
+        "id": "surface",
+        "overflow": false,
+        "heading": {
+          "left": 22,
+          "right": 366,
+          "width": 344
+        },
+        "visible": "1"
+      },
+      {
+        "id": "life",
+        "overflow": false,
+        "heading": {
+          "left": 21.99993896484375,
+          "right": 320.73443603515625,
+          "width": 298.7344970703125
+        },
+        "visible": "0.999997"
+      },
+      {
+        "id": "abyss",
+        "overflow": false,
+        "heading": {
+          "left": 22.000276565551758,
+          "right": 363.85965156555176,
+          "width": 341.859375
+        },
+        "visible": "0.999996"
+      },
+      {
+        "id": "join",
+        "overflow": false,
+        "heading": {
+          "left": 22,
+          "right": 365,
+          "width": 343
+        },
+        "visible": "1"
+      }
+    ],
+    "menuOpen": true,
+    "menuClosed": true,
+    "glyphs": [],
+    "errors": []
+  },
+  {
+    "engine": "webkit",
+    "width": 430,
+    "states": [
+      {
+        "id": "surface",
+        "overflow": false,
+        "heading": {
+          "left": 22,
+          "right": 406,
+          "width": 384
+        },
+        "visible": "1"
+      },
+      {
+        "id": "life",
+        "overflow": false,
+        "heading": {
+          "left": 21.999996185302734,
+          "right": 351.37499618530273,
+          "width": 329.375
+        },
+        "visible": "1"
+      },
+      {
+        "id": "abyss",
+        "overflow": false,
+        "heading": {
+          "left": 22.000045776367188,
+          "right": 398.9062957763672,
+          "width": 376.90625
+        },
+        "visible": "0.999999"
+      },
+      {
+        "id": "join",
+        "overflow": false,
+        "heading": {
+          "left": 22,
+          "right": 400.1875,
+          "width": 378.1875
+        },
+        "visible": "1"
+      }
+    ],
+    "menuOpen": true,
+    "menuClosed": true,
+    "glyphs": [],
+    "errors": []
+  },
+  {
+    "engine": "chromium",
+    "width": 360,
+    "states": [
+      {
+        "id": "surface",
+        "overflow": false,
+        "heading": {
+          "left": 22,
+          "right": 336,
+          "width": 314
+        },
+        "visible": "1"
+      },
+      {
+        "id": "life",
+        "overflow": false,
+        "heading": {
+          "left": 22,
+          "right": 297.71875,
+          "width": 275.71875
+        },
+        "visible": "1"
+      },
+      {
+        "id": "abyss",
+        "overflow": false,
+        "heading": {
+          "left": 22.000001907348633,
+          "right": 337.56250190734863,
+          "width": 315.5625
+        },
+        "visible": "1"
+      },
+      {
+        "id": "join",
+        "overflow": false,
+        "heading": {
+          "left": 22,
+          "right": 338,
+          "width": 316
+        },
+        "visible": "1"
+      }
+    ],
+    "menuOpen": true,
+    "menuClosed": true,
+    "glyphs": [],
+    "errors": []
+  },
+  {
+    "engine": "chromium",
+    "width": 390,
+    "states": [
+      {
+        "id": "surface",
+        "overflow": false,
+        "heading": {
+          "left": 22,
+          "right": 366,
+          "width": 344
+        },
+        "visible": "1"
+      },
+      {
+        "id": "life",
+        "overflow": false,
+        "heading": {
+          "left": 22,
+          "right": 320.734375,
+          "width": 298.734375
+        },
+        "visible": "1"
+      },
+      {
+        "id": "abyss",
+        "overflow": false,
+        "heading": {
+          "left": 22.000019073486328,
+          "right": 363.8593940734863,
+          "width": 341.859375
+        },
+        "visible": "1"
+      },
+      {
+        "id": "join",
+        "overflow": false,
+        "heading": {
+          "left": 22,
+          "right": 364.953125,
+          "width": 342.953125
+        },
+        "visible": "1"
+      }
+    ],
+    "menuOpen": true,
+    "menuClosed": true,
+    "glyphs": [],
+    "errors": []
+  },
+  {
+    "engine": "chromium",
+    "width": 430,
+    "states": [
+      {
+        "id": "surface",
+        "overflow": false,
+        "heading": {
+          "left": 22,
+          "right": 406,
+          "width": 384
+        },
+        "visible": "1"
+      },
+      {
+        "id": "life",
+        "overflow": false,
+        "heading": {
+          "left": 21.999996185302734,
+          "right": 351.37499618530273,
+          "width": 329.375
+        },
+        "visible": "1"
+      },
+      {
+        "id": "abyss",
+        "overflow": false,
+        "heading": {
+          "left": 22,
+          "right": 398.90625,
+          "width": 376.90625
+        },
+        "visible": "1"
+      },
+      {
+        "id": "join",
+        "overflow": false,
+        "heading": {
+          "left": 22,
+          "right": 400.1875,
+          "width": 378.1875
+        },
+        "visible": "1"
+      }
+    ],
+    "menuOpen": true,
+    "menuClosed": true,
+    "glyphs": [],
+    "errors": []
+  }
+]
