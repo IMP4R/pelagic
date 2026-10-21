@@ -90,7 +90,10 @@ function seek(v,p){if(!v.duration||v.readyState<2||v.seeking)return;let target=c
 function render(){pending=false;const now=performance.now();dt=Math.min(40,now-lastTick);lastTick=now;const h=hero.querySelector('.stage').clientHeight;const states=chapters.map(el=>({el,r:el.getBoundingClientRect()}));const doc=document.documentElement;document.querySelector('#depth').textContent=String(Math.round(clamp(scrollY/(doc.scrollHeight-h))*4000)).padStart(4,'0');
 for(let i=0;i<states.length;i++){let{el,r}=states[i],target=clamp(-r.top/Math.max(1,r.height-h)),prev=positions.get(el)??target,p=prev+(target-prev)*(1-Math.exp(-dt/85));if(Math.abs(target-p)<.0002)p=target;else schedule();positions.set(el,p);let v=videos[i],stage=el.querySelector('.stage,.chapter-stage'),title=el.querySelector('h1,h2'),body=el.querySelector('.hero-note,.chapter-content p');
 if(reduce.matches){v.pause();v.style.visibility='hidden';stage.style.backgroundImage=`url(${v.poster})`;stage.style.backgroundSize='cover';stage.style.backgroundPosition='center';stage.style.clipPath='none';title.style.transform='none';title.style.opacity='1';if(body)body.style.opacity='1';continue}
-v.style.visibility='visible';if(r.bottom>0&&r.top<h)seek(v,p);
+// Media runs across the entire visible crossing, not only the pinned hold.
+// Pad its start/end beyond viewport edges; the hero opens already inside the shot.
+const mediaProgress=clamp((h*1.18-r.top)/(r.height+h*1.36));
+v.style.visibility='visible';if(r.bottom>0&&r.top<h)seek(v,mediaProgress);
 const edgeEntry=smooth(0,1,1-r.top/h),edgeExit=smooth(0,1,1-r.bottom/h);
 if(i===0){let exit=edgeExit;stage.style.clipPath=`inset(${exit*43}% 0 ${exit*43}% 0)`;v.style.transform=`scale(${1.03+p*.22})`;title.style.transform=`perspective(1000px) translate3d(${exit*-10}%,${exit*-25}%,0) rotateX(${exit*32}deg)`;title.style.opacity=1-exit;if(body)body.style.opacity=1-exit;el.querySelector('.hero-bottom').style.opacity=1-exit}
 if(i===1){let entry=edgeEntry,exit=edgeExit;stage.style.clipPath=`circle(${entry*145}% at 68% 43%)`;v.style.transform=`scale(${1.18-entry*.18+exit*.12}) translateY(${-exit*8}%)`;title.style.transform=`perspective(1000px) translateY(${(1-entry)*110-exit*60}px) rotateX(${(1-entry)*-42}deg)`;title.style.opacity=entry*(1-exit);if(body)body.style.opacity=entry*(1-exit)}
