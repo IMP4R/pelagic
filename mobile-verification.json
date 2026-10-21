@@ -8,8 +8,8 @@
         "overflow": false,
         "heading": {
           "left": 22,
-          "right": 336,
-          "width": 314
+          "right": 338,
+          "width": 316
         },
         "visible": "1"
       },
@@ -17,9 +17,9 @@
         "id": "life",
         "overflow": false,
         "heading": {
-          "left": 21.999982833862305,
-          "right": 297.75004386901855,
-          "width": 275.75006103515625
+          "left": 21.999984741210938,
+          "right": 337.99998474121094,
+          "width": 316
         },
         "visible": "0.999998"
       },
@@ -28,8 +28,8 @@
         "overflow": false,
         "heading": {
           "left": 22,
-          "right": 337.5625,
-          "width": 315.5625
+          "right": 338,
+          "width": 316
         },
         "visible": "1"
       },
@@ -58,8 +58,8 @@
         "overflow": false,
         "heading": {
           "left": 22,
-          "right": 366,
-          "width": 344
+          "right": 368,
+          "width": 346
         },
         "visible": "1"
       },
@@ -67,9 +67,9 @@
         "id": "life",
         "overflow": false,
         "heading": {
-          "left": 21.999982833862305,
-          "right": 320.73441886901855,
-          "width": 298.73443603515625
+          "left": 21.99998664855957,
+          "right": 367.99998664855957,
+          "width": 346
         },
         "visible": "0.999998"
       },
@@ -78,8 +78,8 @@
         "overflow": false,
         "heading": {
           "left": 22.00008773803711,
-          "right": 363.8594627380371,
-          "width": 341.859375
+          "right": 368.0000877380371,
+          "width": 346
         },
         "visible": "0.999999"
       },
@@ -108,8 +108,8 @@
         "overflow": false,
         "heading": {
           "left": 22,
-          "right": 406,
-          "width": 384
+          "right": 408,
+          "width": 386
         },
         "visible": "1"
       },
@@ -117,9 +117,9 @@
         "id": "life",
         "overflow": false,
         "heading": {
-          "left": 21.999977111816406,
-          "right": 351.37503814697266,
-          "width": 329.37506103515625
+          "left": 21.99997901916504,
+          "right": 408.0000400543213,
+          "width": 386.00006103515625
         },
         "visible": "0.999998"
       },
@@ -128,8 +128,8 @@
         "overflow": false,
         "heading": {
           "left": 22.000194549560547,
-          "right": 398.90644454956055,
-          "width": 376.90625
+          "right": 408.00019454956055,
+          "width": 386
         },
         "visible": "0.999997"
       },
@@ -158,8 +158,8 @@
         "overflow": false,
         "heading": {
           "left": 22,
-          "right": 336,
-          "width": 314
+          "right": 338,
+          "width": 316
         },
         "visible": "1"
       },
@@ -168,8 +168,8 @@
         "overflow": false,
         "heading": {
           "left": 22,
-          "right": 297.71875,
-          "width": 275.71875
+          "right": 338,
+          "width": 316
         },
         "visible": "1"
       },
@@ -178,8 +178,8 @@
         "overflow": false,
         "heading": {
           "left": 22,
-          "right": 337.5625,
-          "width": 315.5625
+          "right": 338,
+          "width": 316
         },
         "visible": "1"
       },
@@ -208,8 +208,8 @@
         "overflow": false,
         "heading": {
           "left": 22,
-          "right": 366,
-          "width": 344
+          "right": 368,
+          "width": 346
         },
         "visible": "1"
       },
@@ -218,8 +218,8 @@
         "overflow": false,
         "heading": {
           "left": 22,
-          "right": 320.734375,
-          "width": 298.734375
+          "right": 368,
+          "width": 346
         },
         "visible": "1"
       },
@@ -228,8 +228,8 @@
         "overflow": false,
         "heading": {
           "left": 22,
-          "right": 363.859375,
-          "width": 341.859375
+          "right": 368,
+          "width": 346
         },
         "visible": "1"
       },
@@ -258,8 +258,8 @@
         "overflow": false,
         "heading": {
           "left": 22,
-          "right": 406,
-          "width": 384
+          "right": 408,
+          "width": 386
         },
         "visible": "1"
       },
@@ -268,8 +268,8 @@
         "overflow": false,
         "heading": {
           "left": 22,
-          "right": 351.375,
-          "width": 329.375
+          "right": 408,
+          "width": 386
         },
         "visible": "1"
       },
@@ -278,8 +278,8 @@
         "overflow": false,
         "heading": {
           "left": 22,
-          "right": 398.90625,
-          "width": 376.90625
+          "right": 408,
+          "width": 386
         },
         "visible": "1"
       },
