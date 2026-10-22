@@ -84,9 +84,15 @@ const clamp=(n)=>Math.max(0,Math.min(1,n));
 const smooth=(a,b,n)=>{let t=clamp((n-a)/(b-a));return t*t*(3-2*t)};
 let pending=false;
 for(const el of [life,abyss]){const stage=document.createElement('div');stage.className='chapter-stage';while(el.firstChild)stage.append(el.firstChild);el.append(stage)}
-for(const v of videos){v.removeAttribute('autoplay');v.removeAttribute('loop');v.pause();v.preload='auto';v.addEventListener('loadedmetadata',schedule);v.addEventListener('seeked',schedule)}
+const desiredVideoPositions=new WeakMap();
+for(const v of videos){v.removeAttribute('autoplay');v.removeAttribute('loop');v.muted=true;v.defaultMuted=true;v.playsInline=true;v.setAttribute('webkit-playsinline','');v.pause();v.preload='auto';for(const event of ['loadedmetadata','loadeddata','canplay','seeked','progress'])v.addEventListener(event,schedule)}
+// Initialize the iOS decoder in the user gesture, then return to the scroll-owned frame.
+function primeVideoDecoders(){for(const v of videos){if(v.dataset.primed==='yes')continue;let play;try{play=v.play()}catch(e){continue}if(play)play.then(()=>{v.pause();v.dataset.primed='yes';schedule()},()=>{schedule()})}schedule()}
+addEventListener('touchstart',primeVideoDecoders,{passive:true});addEventListener('pointerdown',primeVideoDecoders,{passive:true});
 const positions=new WeakMap();let lastTick=performance.now(),dt=16;
-function seek(v,p){if(!v.duration||v.readyState<2||v.seeking)return;let target=clamp(p)*(v.duration-.06);if(Math.abs(v.currentTime-target)>.025)v.currentTime=target}
+function seek(v,p){desiredVideoPositions.set(v,p);if(!Number.isFinite(v.duration)||v.readyState<1)return;if(v.seeking)return;const target=clamp(desiredVideoPositions.get(v))*(v.duration-.06);if(Math.abs(v.currentTime-target)>.025){try{v.currentTime=target}catch(e){schedule()}}}
+// Progress and decoded-data events retry the most recent scroll position, never a stale queued frame.
+window.pelagicPlayback={get videos(){return videos.map(v=>({ready:v.readyState,seeking:v.seeking,time:v.currentTime,target:desiredVideoPositions.get(v),primed:v.dataset.primed==='yes',error:v.error?.code||null}))}};
 function render(){pending=false;const now=performance.now();dt=Math.min(40,now-lastTick);lastTick=now;const h=hero.querySelector('.stage').clientHeight;const states=chapters.map(el=>({el,r:el.getBoundingClientRect()}));const doc=document.documentElement;document.querySelector('#depth').textContent=String(Math.round(clamp(scrollY/(doc.scrollHeight-h))*4000)).padStart(4,'0');
 for(let i=0;i<states.length;i++){let{el,r}=states[i],target=clamp(-r.top/Math.max(1,r.height-h)),prev=positions.get(el)??target,p=prev+(target-prev)*(1-Math.exp(-dt/85));if(Math.abs(target-p)<.0002)p=target;else schedule();positions.set(el,p);let v=videos[i],stage=el.querySelector('.stage,.chapter-stage'),title=el.querySelector('h1,h2'),body=el.querySelector('.hero-note,.chapter-content p');
 if(reduce.matches){v.pause();v.style.visibility='hidden';stage.style.backgroundImage=`url(${v.poster})`;stage.style.backgroundSize='cover';stage.style.backgroundPosition='center';stage.style.clipPath='none';title.style.transform='none';title.style.opacity='1';if(body)body.style.opacity='1';continue}
